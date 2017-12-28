@@ -3,6 +3,7 @@ module Clockwork
     class NoHandlerDefined < RuntimeError; end
 
     attr_reader :config
+    attr_accessor :events
 
     def initialize
       @events = []
