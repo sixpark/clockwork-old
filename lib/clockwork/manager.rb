@@ -2,8 +2,7 @@ module Clockwork
   class Manager
     class NoHandlerDefined < RuntimeError; end
 
-    attr_reader :config
-    attr_accessor :events
+    attr_reader :config, :events
 
     def initialize
       @events = []
